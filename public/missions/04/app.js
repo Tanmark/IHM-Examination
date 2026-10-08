@@ -1,7 +1,7 @@
 // Hämta och visa låtar från servern. / Fetch and render tracks from the server.
 document.querySelector("#load").addEventListener("click", async () => {
   try {
-    const response = await fetch("/api/trakcs");
+    const response = await fetch("/api/tracks");
     if (!response.ok) throw new Error("HTTP " + response.status);
     const tracks = await response.json();
     document.querySelector("#tracks").replaceChildren(
