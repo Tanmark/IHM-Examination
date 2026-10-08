@@ -4,6 +4,7 @@ const select = document.querySelector("#favourite");
 const saved = localStorage.getItem(key);
 if (saved) select.value = saved;
 document.querySelector("#save").addEventListener("click", () => {
+  localStorage.setItem(key, select.value);
   // TODO: Spara select.value här / Save select.value here.
   document.querySelector("#status").textContent = "✓";
 });
