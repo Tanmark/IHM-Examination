@@ -4,7 +4,7 @@ const demoButton = document.querySelector("#demo-play");
 const demoStatus = document.querySelector("#demo-status");
 
 // Ändra true till false och spara filen. / Change true to false and save.
-demoButton.disabled = true;
+demoButton.disabled = false;
 
 // Körs när besökaren klickar. / Runs when the visitor clicks.
 demoButton.addEventListener("click", () => {

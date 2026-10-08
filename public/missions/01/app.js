@@ -8,6 +8,6 @@ function boot() {
     ? '● Ready light is ON'
     : '● Startlampan är tänd';
   status.dataset.ready = 'true';
-
+}
 // Något saknas här / Something is missing here.
 boot();
