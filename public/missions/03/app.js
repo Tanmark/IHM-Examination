@@ -4,4 +4,4 @@ function playCurrent() {
   document.querySelector("#status").textContent = "PLAYING";
   document.querySelector("#status").dataset.playing = "true";
 }
-button.addEventListener("hover", playCurrent);
+button.addEventListener("click", playCurrent);
