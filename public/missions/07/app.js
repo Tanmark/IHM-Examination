@@ -12,7 +12,7 @@ document.querySelector("#load").addEventListener("click", async () => {
 document.querySelector("#load") .addEventListener("click", async () => {
   const status = document.querySelector("#status");
   try {
-    const response = await fetch("/api/encore");
+    const response = await fetch("/api/encorex);
     if (!response.ok) throw new Error("Servern svarade med fel: HTTP " + response.status);
     const track = await response.json();
     document.querySelector("#encore") .textContent = track.title + "-" + track.artist;
